@@ -1,0 +1,188 @@
+/* ==== 
+GLOBAL STYLES 
+==== */
+
+body {
+  background-color: #fffaf0;
+  color: #333;
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ==== 
+h1: MY NAME
+==== */
+
+h1 {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 75px;
+  text-align: center;
+  margin-top: 210px;
+  /* border: red solid; */
+}
+
+/* ==== 
+h2: SECTION HEADINGS
+==== */
+
+h2 {
+  /* border: red solid; */
+  color: darkgreen;
+  font-size: 60px;
+  font-weight: 900;
+  border-left: 16px dotted hotpink;
+  /* border-radius: 10%; */
+  /* padding-bottom: 4px; */
+  /* padding-top: 20px; */
+  margin-top: 0;
+}
+
+/* ==== 
+section: RELATED CONTENT CONTAINERS
+==== */
+section {
+  /* border: 2px solid red; */
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+/* ==== 
+div: NESTED GROUPING CONTAINERS
+==== */
+
+div {
+  /* border: red solid; */
+  margin-top: 108px;
+}
+
+/* ==== 
+TOP LEVEL ELEMENTS: AVATAR IMG, NAV BAR, NAV LINKS
+==== */
+
+.avatar {
+  /* border: red solid; */
+  width: 115px;
+}
+
+nav {
+  /* border: #ff0000 solid; */
+  background-color: #fffaf0cc;
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap;  */
+  padding: 12px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  /* border-radius: 50%; */
+}
+
+nav a {
+  /* border: red solid; */
+
+  color: #fffaf0;
+  font-size: 3vw;
+  font-weight: 800;
+  text-decoration: none;
+  /* margin: 0 auto; */
+  padding-top: 35px;
+  background-color: hotpink;
+  border-radius: 50%;
+}
+
+/* ==== 
+.header-section: BORDER FOR STYLING GUIDANCE
+==== */
+
+/* .header-section {
+  border: solid blue;
+} */
+
+/* ==== 
+.banner-div: GROUPS BACKGROUND BANNER AND h1/MY NAME
+==== */
+/* transparent border used here--removal of border shifts layout */
+.banner-div {
+  border: transparent solid;
+  height: 500px;
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* ==== 
+CONTENT SECTION ELEMENTS
+==== */
+
+/* ==== 
+ABOUT SECTION 
+==== */
+
+.about-para {
+  font-size: 24px;
+}
+
+/* ==== 
+EXPERIENCE SECTION 
+==== */
+
+.exp-list {
+  /* border: red solid; */
+  margin-top: 0;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+  gap: 20px;
+}
+
+.exp-listItem {
+  /* border: blue solid; */
+  /* border-left: darkorange dashed 2px;
+  border-right: darkorange dashed 2px; */
+  border-bottom: darkorange dashed 2px;
+  margin: 0 15px;
+
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.exp-para {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+/* ==== 
+SKILLS SECTION 
+==== */
+
+/* ==== 
+PROJECTS SECTION 
+==== */
+
+/* ==== 
+CONNECT SECTION 
+==== */
+
+#Connect ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.github-logo {
+  width: 100px;
+}
+
+.ig-logo {
+  width: 100px;
+}
