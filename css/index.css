@@ -3,8 +3,8 @@ GLOBAL STYLES
 ==== */
 
 body {
-  background-color: #fffaf0;
-  color: #333;
+  background-color: #281e5d;
+  color: #fffaf0;
   font-family: "Segoe UI", Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -18,7 +18,8 @@ h1 {
   font-family: "Sedgwick Ave Display", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 75px;
+  font-size: 80px;
+  color: #2cff05;
   text-align: center;
   margin-top: 210px;
   /* border: red solid; */
@@ -30,10 +31,10 @@ h2: SECTION HEADINGS
 
 h2 {
   /* border: red solid; */
-  color: darkgreen;
+  color: #33b864;
   font-size: 60px;
   font-weight: 900;
-  border-left: 16px dotted hotpink;
+  border-left: 16px dotted #ff4500;
   /* border-radius: 10%; */
   /* padding-bottom: 4px; */
   /* padding-top: 20px; */
@@ -69,7 +70,7 @@ TOP LEVEL ELEMENTS: AVATAR IMG, NAV BAR, NAV LINKS
 
 nav {
   /* border: #ff0000 solid; */
-  background-color: #fffaf0cc;
+  background-color: #ff1d8dcc;
   display: flex;
   justify-content: space-evenly;
   /* flex-wrap: wrap;  */
@@ -83,13 +84,13 @@ nav {
 nav a {
   /* border: red solid; */
 
-  color: #fffaf0;
+  color: #281e5d;
   font-size: 3vw;
   font-weight: 800;
   text-decoration: none;
   /* margin: 0 auto; */
   padding-top: 35px;
-  background-color: hotpink;
+  background-color: #fffaf0cc;
   border-radius: 50%;
 }
 
