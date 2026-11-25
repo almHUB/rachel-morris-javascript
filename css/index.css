@@ -15,20 +15,31 @@ TYPOGRAPHY
 ==== */
 .about-para {
   /* border: red solid;  */
-  font-size: 24px;
+  font-size: 2rem;
   /* font-weight: 100; */
+
+  @media (max-width: 500px) {
+    font-size: 8vw;
+  }
 }
 
 .exp-paras {
-  font-size: 24px;
+  font-size: 2rem;
   /* font-weight: 100; */
+  @media (max-width: 500px) {
+    font-size: 8vw;
+  }
 }
 
 h3 {
   /* experience titles */
   /* border: red solid; */
   margin: 0;
-  font-size: 28px;
+  font-size: 2.5rem;
+
+  @media (max-width: 500px) {
+    font-size: 10vw;
+  }
 }
 
 .exp-date {
@@ -36,7 +47,7 @@ h3 {
 }
 
 #Skills ul {
-  font-size: 24px;
+  font-size: 1.75rem;
 }
 
 /* ==== 
@@ -46,6 +57,10 @@ NAVIGATION BAR ELEMENTS: Avatar image; Navigation bar; Nav links
 .avatar {
   /* border: red solid; */
   width: 115px;
+
+  @media (max-width: 500px) {
+    width: 10vw;
+  }
 }
 
 nav {
@@ -53,22 +68,31 @@ nav {
   background-color: #ff1d8dcc;
   display: flex;
   justify-content: space-evenly;
-  padding: 12px 10px;
+  padding: 0.75rem 0.63rem;
   position: sticky;
   top: 0;
   z-index: 100;
+
+  @media (max-width: 500px) {
+    position: fixed;
+    width: 100%;
+    padding: 0.75rem 0.05rem;
+  }
 }
 
 .nav-links {
   /* border: red solid; */
-
+  display: inline-flex;
+  align-items: center;
   color: #281e5d;
-  font-size: 2.5vw;
+  font-size: 2.8vw;
   font-weight: 800;
   text-decoration: none;
-  padding-top: 33px;
   background-color: #fffaf0;
   border-radius: 50%;
+
+  @media (max-width: 500px) {
+  }
 }
 
 /* ==== 
@@ -81,7 +105,11 @@ HEADER ELEMENTS: .header-section; .banner-div w/background-image; h1/MY NAME
 
 .header-section {
   /* border: solid blue; */
-  margin-bottom: 30px;
+  margin-bottom: 1.8rem;
+
+  @media (max-width: 500px) {
+    margin-top: 15vh;
+  }
 }
 
 /* transparent border used; removal shifts layout */
@@ -93,6 +121,11 @@ HEADER ELEMENTS: .header-section; .banner-div w/background-image; h1/MY NAME
   background-repeat: no-repeat;
   padding-top: 0;
   margin-top: 0;
+
+  @media (max-width: 1015px) {
+    height: 250px;
+    background-size: contain;
+  }
 }
 
 /* ==== 
@@ -104,12 +137,30 @@ h1 {
   font-family: "Sedgwick Ave Display", cursive;
   font-weight: 400;
   font-style: normal;
-  font-size: 80px;
+  font-size: 6rem;
+  padding-top: 1.5vh;
   color: #2cff05;
   text-align: center;
-  margin-top: 210px;
+  margin-top: 13rem;
   z-index: 0;
+
+  @media (max-width: 1015px) {
+    font-size: 4.5rem;
+    margin-top: 5rem;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 3rem;
+    margin-top: 6rem;
+  }
 }
+
+/*
+  @media (max-width: 300px) {
+    margin-top: 5rem;
+    padding-top: 4vh;
+    font-size: 2rem;
+  } */
 
 /* ==== 
 PORTFOLIO CONTENT ELEMENTS
@@ -120,7 +171,10 @@ SECTION CONTAINERS FORMAT: Related content sections
 ==== */
 section {
   /* border: 2px solid red; */
-  padding: 10px;
+  padding: 0.63rem;
+
+  @media (max-width: 500px) {
+  }
 }
 
 /* ==== 
@@ -129,7 +183,7 @@ DIV CONTAINERS FORMAT
 
 div {
   /* border: red solid; */
-  margin-top: 125px;
+  margin-top: 7.8rem;
 }
 
 /* ==== 
@@ -140,11 +194,15 @@ h2 {
   /* border: red solid; */
   font-family: "Sedgwick Ave Display", cursive;
   color: #33b864;
-  font-size: 75px;
+  font-size: 4.7rem;
   font-weight: 900;
   border-left: 16px dotted #ff4500;
   margin-top: 0;
   margin-bottom: 0;
+
+  @media (max-width: 500px) {
+    font-size: 19vw;
+  }
 }
 
 /* ==== 
@@ -179,7 +237,7 @@ EXPERIENCE SECTION CONTENT FORMAT
 .exp-listItems {
   /* border: blue solid; */
   border-bottom: darkorange dashed 2px;
-  margin: 50px 0 15px;
+  margin: 3rem 0 0.9rem;
 }
 
 /* ==== 
@@ -191,18 +249,26 @@ SKILLS SECTION CONTENT FORMAT
   list-style: none;
   flex-wrap: wrap;
   gap: 100px;
+
+  @media (max-width: 500px) {
+    gap: 25px;
+  }
 }
 
 #Skills li {
   /* border: red solid; */
   color: darkorange;
   font-variant: small-caps;
-  font-size: 35px;
+  font-size: 2.2rem;
   font-weight: 450;
   border-bottom: solid;
-  margin: 0 20px;
+  margin: 0 0.63rem;
   text-align: center;
-  padding: 10px;
+  padding: 0.3rem;
+
+  @media (max-width: 500px) {
+    font-size: 8vw;
+  }
 }
 
 /* ==== 
@@ -223,10 +289,152 @@ CONNECT SECTION CONTENT FORMAT
 
 .github-logo {
   width: 200px;
+
+  @media (max-width: 500px) {
+    width: 40vw;
+  }
 }
 
 .ig-logo {
   width: 200px;
+
+  @media (max-width: 500px) {
+    width: 40vw;
+  }
+}
+
+.leaveMsgHeader {
+  /* background-color: #ff4500; */
+  margin-top: 7.2rem;
+  margin-bottom: 3rem;
+  padding-bottom: 2.2rem;
+  border-bottom: 16px dotted #ff4500;
+  border-left: none;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-variant: small-caps;
+  color: #33b864;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-variant: small-caps;
+  font-size: 2.2rem;
+}
+
+.formLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  background-color: #ffe1f0;
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 275px;
+  margin-top: 2rem;
+  padding: 0.3rem 1.25rem;
+  font-size: 1.25rem;
+  text-align: center;
+
+  @media (max-width: 500px) {
+    height: 5vh;
+    width: 60vw;
+  }
+}
+
+form textarea {
+  background-color: #ffe1f0;
+  height: 150px;
+  width: 275px;
+  border: none;
+  border-radius: 50%;
+  margin-top: 2rem;
+  padding: 1.5rem 4rem;
+  font-size: 1.25rem;
+  vertical-align: middle;
+  text-align: center;
+
+  @media (max-width: 500px) {
+    height: 25vh;
+    width: 40vw;
+  }
+}
+
+form button {
+  background-color: #ff4500;
+  width: 125px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ffe1f0;
+  margin-bottom: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.msgListHeader {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-variant: small-caps;
+  color: #33b864;
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+}
+
+/* msg list */
+
+.msgUl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style: none;
+  padding: 0;
+}
+
+.msgItem {
+  padding: 0.6rem 0.06rem 2rem;
+  background-color: #acff2f11;
+  border-bottom: dotted #ff4500 10px;
+  color: #ffe1f0;
+  font-size: 1.5rem;
+  word-break: break-all;
+}
+
+.msgItem a {
+  color: #33b864;
+  font-variant: small-caps;
+  font-size: 1.75rem;
+  margin-right: 0.9rem;
+  text-decoration: #2cff05 underline;
+}
+
+.msgItem button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffe1f0;
+  width: 85px;
+  height: 20px;
+  border: none;
+  border-radius: 30%;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: blue;
+  margin-left: 1.5rem;
 }
 
 .footer-class {

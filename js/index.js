@@ -45,3 +45,65 @@ for (let i = 0; i < skills.length; i++) {
   skill.textContent = skills[i];
   skillsList.appendChild(skill);
 }
+
+const messageForm = document.forms["leave_message"];
+document.getElementById("messages").classList.add("hidden");
+
+messageForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  let name = event.target.usersName.value;
+  let email = event.target.usersEmail.value;
+  let message = event.target.usersMessage.value;
+
+  console.log(`Name: ${name} Email: ${email} Message: ${message}`);
+
+  let messageSection = document.querySelector("#messages");
+  let messageList = messageSection.querySelector("ul");
+  let newMessage = document.createElement("li");
+
+  //ADDING CLASSES to <ul> and <li> for styling
+  messageList.classList.add("msgUl");
+  newMessage.classList.add("msgItem");
+
+  newMessage.innerHTML = `<a href="mailto: ${email}">${name}</a>
+   <span>${message}</span>`;
+
+  //REMOVE BUTTON
+  let removeButton = document.createElement("button");
+  removeButton.innerText = "remove";
+  removeButton.type = "button";
+
+  //REMOVE BUTTON EVENT LISTENER
+  removeButton.addEventListener("click", function (event) {
+    let entry = removeButton.parentNode;
+    entry.remove();
+
+    // console.log("AFTER REMOVE, LIST: " + listLength);
+    // console.log(messageList);
+    // console.log(newMessage);
+
+    //.remove() NEVER ACTUALL GETS listLen DOWN TO ZERO
+    if (listLength === 1) {
+      messageSection.classList.add("hidden");
+    }
+  });
+
+  newMessage.appendChild(removeButton);
+  messageList.appendChild(newMessage);
+
+  // console.log(messageList);
+  // console.log(newMessage);
+
+  let listLength = messageList.getElementsByTagName("li").length;
+
+  //console.log("LIST LEN AFTER SUBMIT: " + listLength);
+
+  if (listLength > 0) {
+    messageSection.classList.remove("hidden");
+  }
+
+  messageForm.reset();
+});
+
+console.log(window.innerWidth);
