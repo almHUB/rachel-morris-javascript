@@ -30,6 +30,7 @@
       <a class="nav-links" href="#Skills">&nbsp;Skills&nbsp;</a>
       <a class="nav-links" href="#Projects">&nbsp;Projects&nbsp;</a>
       <a class="nav-links" href="#Connect">&nbsp;Connect&nbsp;</a>
+      <a class="nav-links" href="#messageForm">&nbsp;Message&nbsp;</a>
     </nav>
 
     <main>
@@ -48,7 +49,7 @@
               spending time in entertainment and banking, I decided to explore
               media. I chose to learn full-stack web development as a foundation
               to support an interdisciplinary approach to creativity,
-              communication and problem-solving. Currently,
+              communication and problem-solving. <br><br> Currently,
               <strong
                 >I am developing a research-based art project exploring
                 questions around media and cyberculture through intermedia and
@@ -153,6 +154,33 @@
             </li>
           </ul>
         </div>
+      </section>
+
+      <section id="messageForm">
+        <h2 class="leaveMsgHeader">leave a message</h2>
+        <form name="leave_message">
+          <label class="formLabel">
+            Name: <br />
+            <input type="text" name="usersName" required />
+          </label>
+          <br />
+          <label class="formLabel">
+            E-mail: <br />
+            <input type="email" name="usersEmail" required />
+          </label>
+          <br />
+          <label class="formLabel">
+            Message: <br />
+            <textarea name="usersMessage" required></textarea>
+          </label>
+          <br />
+          <button class="submitButton" type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section id="messages">
+        <h2 class="msgListHeader">messages</h2>
+        <ul></ul>
       </section>
     </main>
 
